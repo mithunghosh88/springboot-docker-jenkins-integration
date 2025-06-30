@@ -1,0 +1,21 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-docker
+  namespace: mithunghoshsd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-docker
+  template:
+    metadata:
+      labels:
+        app: spring-boot-docker
+    spec:
+      containers:
+      - name: your-container-name
+        image: mithunghoshsd/spring-boot-docker:6
+        ports:
+        - containerPort: 8080
