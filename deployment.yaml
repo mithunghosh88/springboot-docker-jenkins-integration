@@ -18,4 +18,4 @@ spec:
       - name: your-container-name
         image: mithunghoshsd/spring-boot-docker:6
         ports:
-        - containerPort: 8080
+        - containerPort: 28080
