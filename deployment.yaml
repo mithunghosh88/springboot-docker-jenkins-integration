@@ -15,7 +15,7 @@ spec:
         app: spring-boot-docker
     spec:
       containers:
-      - name: your-container-name
+      - name: spring-boot-docker
         image: mithunghoshsd/spring-boot-docker:6
         ports:
         - containerPort: 28080
